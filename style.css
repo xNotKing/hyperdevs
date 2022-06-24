@@ -1,4 +1,125 @@
-html, body {
-  height: 100%;
-  width: 100%;
+* {
+	margin: auto;
+	padding: auto;
+	box-sizing: border-box;
+}
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	z-index: 1;
+}
+/*
+----- NAV BAR -----
+*/ 
+nav {
+	border-bottom: 1px solid gray;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+nav .urls {
+	text-align: center;
+	margin-top: 30px;
+}
+nav .urls a {
+	color: #000;
+	text-decoration: none;
+}
+nav .urls a:hover {
+	border-bottom: 1px solid #000;
+}
+nav > .urls > a > img {
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	height: 60px;
+	object-fit: contain;
+	border-radius: 50%;
+} 
+/*
+----- MAIN CONTENT ---- 
+*/
+main {
+	margin-top: 120px;
+}
+.searcher {
+	text-align: center;
+}
+.searcher input {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background: #f5f0f0;
+	color: #000;
+	padding: 8px;
+	border-radius: 7px;
+	width: 70vw;
+	max-width: 300px;
+	text-align: center;
+}
+.autocomplete {
+	display: none;
+}
+.searcher li {
+	width: 70vw;
+	max-width: 300px;
+	background: #f5f0f0;
+	list-style-type: none;
+	margin-top: 3px;
+	border-radius: 3px;
+	padding: 3px;
+}
+/*
+------- Font Awesome ------
+*/
+.fordevs-sidebar .discord::before {
+	color: #5865F2;
+	font-size: 20px;
+}
+.fordevs-sidebar .bill::before {
+	color: #0ad60a;
+	font-size: 20px;
+}
+/*
+----- Aside -----
+*/
+.forDevs{
+	z-index: 99999999;
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	opacity: 1.1;
+}
+.forDevs .fas::before {
+	font-size: 25px;
+}
+.fordevs-sidebar {
+	color: #000;
+	background: #fff;
+	border-right: 1px solid gray;
+	width: 0;
+	max-width: 250px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 80px;
+	z-index: 2;
+	opacity: 0;
+	list-style-type: none;
+}
+.fordevs-sidebar li {
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 18px;
+	list-style-type: none;
+}
+.fordevs-sidebar a {
+	text-decoration: none;
+}
+.fd-opt {
+	color: #000;
+	display: none;
 }
