@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let userdata, autocomparr, acexec;
 let suggestions = [
 	"HCF Core para PocketMine-MP 45$",
@@ -61,7 +60,7 @@ fordevs.addEventListener("click", () => {
 		$(".fd-opt").hide()
 	}
 })
-=======
+/*
 let userdata, autocomparr, acexec;
 let suggestions = [
 	"HCF Core para PocketMine-MP 45$",
@@ -103,7 +102,7 @@ searchInp.addEventListener("click", () => {
 })
 /*
 --- Interactive navigation bar ----
-*/
+
 let fordevs = document.querySelector(".forDevs")
 let fdSidebar = document.querySelector(".fordevs-sidebar")
 fordevs.addEventListener("click", () => {
@@ -124,4 +123,4 @@ fordevs.addEventListener("click", () => {
 		$(".fd-opt").hide()
 	}
 })
->>>>>>> origin/main
+*/
