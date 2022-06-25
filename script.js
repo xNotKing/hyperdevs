@@ -14,7 +14,7 @@ searchInp.addEventListener("keyup", (e) => {
 	if (userinput) {
 		// Filter data
 		autocomparr = suggestions.filter((data) => {
-			return data = data.toLocaleLowerCase().startsWith(userinput.toLocaleLowerCase());
+			return data = data.toLocaleLowerCase().includes(userinput.toLocaleLowerCase());
 		})
 		// To html
 		autocomparr = autocomparr.map((data) => {
@@ -28,7 +28,7 @@ searchInp.addEventListener("keyup", (e) => {
 acexec = (list) => {
 	let dataList;
 	if (!list.length) {
-		autocomplete.innerHTML = "<li>No results</li>"
+		autocomplete.innerHTML = "<li>No se encotraron resultados</li>"
 	} else {
 		dataList = list.join('')
 		autocomplete.innerHTML = dataList

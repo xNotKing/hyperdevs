@@ -18,6 +18,8 @@ nav {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	background: #fff;
+	z-index: 2;
 }
 nav .urls {
 	text-align: center;
@@ -43,6 +45,14 @@ nav > .urls > a > img {
 */
 main {
 	margin-top: 120px;
+}
+main a {
+	cursor: pointer;
+	text-decoration: none;
+	color: blue;
+}
+main a:hover {
+	border-bottom: 1px solid blue;
 }
 .searcher {
 	text-align: center;
@@ -92,6 +102,7 @@ main {
 	top: 25px;
 	left: 10px;
 	opacity: 1.1;
+	cursor: normal;
 }
 .forDevs .fas::before {
 	font-size: 25px;
@@ -122,8 +133,4 @@ main {
 .fd-opt {
 	color: #000;
 	display: none;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main
